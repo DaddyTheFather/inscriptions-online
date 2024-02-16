@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>loading</title>
+  <style>
+    .element {
+      width: 100%;
+      height: 250px;
+      animation: pulse 5s infinite;
+
+    }
+
+    @keyframes pulse {
+      0% {
+        color: white;
+      }
+      50%{
+        opacity: 0;
+      }
+      100% {
+        color: white;
+      }
+    }
+
+    html,
+    body {
+      background: black;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<h1 class="element">
+  <div style="font-size: 26px;width: 100%; color: white;"><center style="font-size: 150px;">◉</center></div>
+  <center id="loading">loading</center>
+</h1>
+
+<div style="width: 100%; height: 50px;">
+<center style="color: orange">create &amp; connect your domains with <a href="https://looksordinal.com" target="_blank" style="color: orange;">looks◉rdinal</a></center>
+</div>
+
+<script src="loading.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "Sats Domain Resolver",
+  "icons": {
+    "16": "icon16.png",
+    "19": "icon19.png",
+    "38": "icon38.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {},
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Resolves an Ordinals .sats domain to its specified content location.",
+  "permissions": [
+    "webRequest",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.sats/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html"
+}
