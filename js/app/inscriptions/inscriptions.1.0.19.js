@@ -1799,7 +1799,7 @@ async function satsToDollars(sats) {
 }
 
 function modalVanish() {
-    $(".black-bg").style.display = "none";
+    $(".white-bg").style.display = "none";
     $(".modal").style.display = "none";
 }
 

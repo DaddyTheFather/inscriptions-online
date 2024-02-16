@@ -149,7 +149,7 @@ async function initCluster()
         jQuery('.mint').prop('disabled', false);
         jQuery('#return').prop('disabled', false);
 
-        _chainAlert('Login required. Please sign in with your wallet.<br/><br/>Signatures cannot do you any harm and are used for account verification, only.<br/><br/>In doubts feel free to join our <a href="https://discord.gg/Ur8XGaurSd" target="_blank">Discord</a> to check looksordinal\'s legitimacy.', '#message-main');
+        _chainAlert('Login required. Please sign in with your wallet.<br/><br/>Signatures cannot do you any harm and are used for account verification, only.<br/><br/>In doubts feel free to join our <a href="https://discord.gg/koitrading" target="_blank">Discord</a> to check K◉iTrading\'s legitimacy.', '#message-main');
 
         let message = "Rarity Garden sign in: " + msg.nonce;
         let signature = await web3.eth.personal.sign(message, rnActiveAccount);
@@ -196,7 +196,7 @@ async function initCluster()
         out += '<input style="display:none;" type="text" id="copy_inscription" value="'+msg.receiver_address+'"/>';
         out += '<hr/><div><input type="text" style="display: inline-block; width:70%;" value="'+msg.receiver_address+'" /> <a href="javascript:copyToClipboard(\'copy_inscription\',\'copy_inscription_butt\');void(0);" id="copy_inscription_butt" class="btn btn-secondary btn-sm btn-plain">Copy</a></div>';
         out += '<div style="font-size: 14px; color:gray;>Recommended fee rate: '+msg.fee+' sat/vB</div>';
-        out += '<hr/><div style="font-size: 14px; color:gray;">Close this window after sending and wait for your mint to appear in the "Bridge" section. Make sure your Ethereum wallet is connected at all times and that you are signed into looksordinal.</div>';
+        out += '<hr/><div style="font-size: 14px; color:gray;">Close this window after sending and wait for your mint to appear in the "Bridge" section. Make sure your Ethereum wallet is connected at all times and that you are signed into K◉iTrading.</div>';
 
         _chainAlert(out, '#message-bridge');
     });
